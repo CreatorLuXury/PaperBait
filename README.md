@@ -20,10 +20,10 @@ Website is using OCR for reading receipe values and then counts points for playe
     - Copy all content from website to public_html<br/>
     - Insert username, password, database name, host into connector.php<br/>
 2. Compile code on my own<br/>
-- All previous steps<br/>
-- Install SDL modules (Base, audio, ttf etc.)<br/>
-- Install emscripten [from here](https://emscripten.org)<br/>
-- Compile with custom options or via compile.sh inside cpp project<br/>
+    - All previous steps<br/>
+    - Install SDL modules (Base, audio, ttf etc.)<br/>
+    - Install emscripten [from here](https://emscripten.org)<br/>
+    - Compile with custom options or via compile.sh inside cpp project<br/>
     
 
 ### How to change in game item value
