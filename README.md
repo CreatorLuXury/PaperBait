@@ -34,11 +34,12 @@ Instruction for debian systems
     ```
     sudo apt install mariadb-server
     ```
-        - Log into mysql
+    
+    - Log into mysql
         ```
         sudo mysql -p
         ```
-        - create new database
+    - create new database
         ```
         CREATE database db_paperbait;
         CREATE USER paperbait IDENTYFIED BY 'password';
