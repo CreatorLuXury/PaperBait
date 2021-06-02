@@ -19,23 +19,39 @@ Instruction for debian systems
 1. Already compiled code:<br/>
     - Install required components 
     ```
-      apt install tesseract-ocr
-      apt install php-xmlrpc
-      apt install php-mysql
-      apt install php-common
-      apt install php-imagick
+      sudo apt install tesseract-ocr
+      sudo apt install php-xmlrpc
+      sudo apt install php-mysql
+      sudo apt install php-common
+      sudo apt install php-imagick
 
     ```
     - Install Language component for ocr eg.
     ```
-    apt install tesseract-ocr-pol
+    sudo apt install tesseract-ocr-pol
     ```
     - Prepare database<br/>
+    ```
+    sudo apt install mariadb-server
+    ```
+        - Log into mysql
+        ```
+        sudo mysql -p
+        ```
+        - create new database
+        ```
+        CREATE database db_paperbait;
+        CREATE USER paperbait IDENTYFIED BY 'password';
+        GRANT ALL PRIVILEGES ON db_paperbait.* to paperbait;
+        ```
     - Copy all content from website to public_html<br/>
     - Insert username, password, database name, host into connector.php<br/>
 2. Compile code on my own<br/>
     - All previous steps<br/>
     - Install SDL modules (Base, audio, ttf etc.)<br/>
+    ```
+    sudo apt install libsdl2-*
+    ```
     - Install emscripten [from here](https://emscripten.org)<br/>
     - Compile with custom options or via compile.sh inside cpp project<br/>
     
