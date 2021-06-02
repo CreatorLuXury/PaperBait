@@ -16,9 +16,9 @@ Website is using OCR for reading receipe values and then counts points for playe
 ## How to install?
 
 1. Already compiled code:<br/>
-- Prepare database<br/>
-- Copy all content from website to public_html<br/>
-- Insert username, password, database name, host into connector.php<br/>
+    - Prepare database<br/>
+    - Copy all content from website to public_html<br/>
+    - Insert username, password, database name, host into connector.php<br/>
 2. Compile code on my own<br/>
 - All previous steps<br/>
 - Install SDL modules (Base, audio, ttf etc.)<br/>
