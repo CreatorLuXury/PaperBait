@@ -4,7 +4,7 @@ PaperBait app is <br/>
 
 This app has two separate modules<br/>
 
-Website written in php/js<br/>
+Website written in php 7.4 js and using bootstrap 5<br/> a
 Game written in CPP using SDL2 compiled to js with Emscripten<br/>
 
 ## How this works?
@@ -13,9 +13,23 @@ Application is using database to for storageing data, and php for transactions.
 Some PHP files are used by ajax from game, these scripts allow to read and save data eg. money and gamestate.
 Website is using OCR for reading receipe values and then counts points for players
 
-## How to install?
+## How to install* ?
+Instruction for debian systems
 
 1. Already compiled code:<br/>
+    - Install required components 
+    ```
+      apt install tesseract-ocr
+      apt install php-xmlrpc
+      apt install php-mysql
+      apt install php-common
+      apt install php-imagick
+
+    ```
+    - Install Language component for ocr eg.
+    ```
+    apt install tesseract-ocr-pol
+    ```
     - Prepare database<br/>
     - Copy all content from website to public_html<br/>
     - Insert username, password, database name, host into connector.php<br/>
