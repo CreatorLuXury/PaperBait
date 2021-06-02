@@ -1,11 +1,11 @@
 # PaperBait
 
-PaperBait app is 
+PaperBait app is <br/>
 
-This app has two separate modules
+This app has two separate modules<br/>
 
-Website written in php/js
-Game written in CPP using SDL2 compiled to js with Emscripten
+Website written in php/js<br/>
+Game written in CPP using SDL2 compiled to js with Emscripten<br/>
 
 ## How this works?
 
@@ -15,19 +15,19 @@ Website is using OCR for reading receipe values and then counts points for playe
 
 ## How to install?
 
-  1.Already compiled code:
-    Prepare database
-    Copy all content from website to public_html
-    Insert username, password, database name, host into connector.php
-  2.Compile code on my own
-    All previous steps
-    Install SDL modules (Base, audio, ttf etc.)
-    Install emscripten [from here](https://emscripten.org)
-    compile with custom options or via compile.sh inside cpp project
+  1.Already compiled code:<br/>
+    Prepare database<br/>
+    Copy all content from website to public_html<br/>
+    Insert username, password, database name, host into connector.php<br/>
+  2.Compile code on my own<br/>
+    All previous steps<br/>
+    Install SDL modules (Base, audio, ttf etc.)<br/>
+    Install emscripten [from here](https://emscripten.org)<br/>
+    compile with custom options or via compile.sh inside cpp project<br/>
     
 
 ### How to change in game item value
-Open file CarouselMenu.cpp
-Find method init_food or init_fishes
-Change values as you desire
-Compile Game and move to public_html
+Open file CarouselMenu.cpp<br/>
+Find method init_food or init_fishes<br/>
+Change values as you desire<br/>
+Compile Game and move to public_html<br/>
